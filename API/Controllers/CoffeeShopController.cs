@@ -1,11 +1,13 @@
 ﻿using API.Models;
 using API.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CoffeeShopController : ControllerBase
     {
         private readonly ICoffeeShopService _coffeeShopService;
