@@ -23,7 +23,7 @@ namespace Server
 
         public static IEnumerable<ApiResource> ApiResources => new[]
         {
-            new ApiResource("CofeeAPI")
+            new ApiResource("CoffeeAPI")
             {
                 Scopes = new List<string> { "CoffeeAPI.read", "CoffeeAPI.write" },
                 ApiSecrets = new List<Secret> { new Secret("ScopeSecret".Sha256()) },
